@@ -20,11 +20,15 @@ h1{
 
 .top-pane {
     background-color: hsl(225, 6%, 25%);
+    height: 55vh;
 }
 
 .pane {
-    height: 47.3vh;
     display: flex;
+}
+
+.bottom-pane {
+    height: 39.5vh;
 }
 
 img {
