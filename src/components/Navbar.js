@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div className='navbar'>
         <img src="./codepenLogo.ico" />
-        <h1>CodePen Clone</h1>
+        <h1>Code Editor</h1>
     </div>
   )
 }
