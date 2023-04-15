@@ -24,6 +24,7 @@ h1{
 }
 
 .pane {
+    height: 47vh;
     display: flex;
 }
 
