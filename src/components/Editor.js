@@ -1,12 +1,13 @@
 import React from 'react'
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/theme/material.css'
+import 'codemirror/addon/edit/closetag'
 import 'codemirror/mode/xml/xml'
 import 'codemirror/mode/javascript/javascript'
 import 'codemirror/mode/css/css'
 import { Controlled as ControlledEditor } from 'react-codemirror2'
 
-export default function Editor( props ) {
+export default function Editor(props) {
   const {
     language,
     displayName,
@@ -15,7 +16,7 @@ export default function Editor( props ) {
   } = props;
 
   function handleChange(editor, data, value){
-    onChange( value )
+    onChange(value)
   }
 
   return (
@@ -25,15 +26,16 @@ export default function Editor( props ) {
         <button>O/C</button>
       </div>
       <ControlledEditor
-        onBeforeChange={ handleChange }
-        value={ value }
+        onBeforeChange={handleChange}
+        value={value}
         className='code-mirror-wrapper'
         options={{
           lineWrapping: true,
           lint: true,
           mode: language,
           theme: 'material',
-          lineNumbers: true
+          lineNumbers: true,
+          autoCloseTags: true
         }}
       />
     </div>
