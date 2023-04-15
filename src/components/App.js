@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Editor from '../components/Editor';
+import Navbar from '../components/Navbar';
 
 function App() {
   const [html, setHtml] = useState('')
@@ -8,6 +9,7 @@ function App() {
 
   return (
       <>
+            <Navbar />
           <div className='pane top-pane'>
             <Editor 
               language='xml'

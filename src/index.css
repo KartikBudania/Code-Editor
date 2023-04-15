@@ -2,13 +2,33 @@ body{
     margin: 0;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(225, 6%, 25%);
+    height: 40px;
+    width: 100%;
+}
+
+h1{
+    align-self: center;
+    font-size: 25px;
+    margin: 0px 10px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
 .top-pane {
     background-color: hsl(225, 6%, 25%);
 }
 
 .pane {
-    height: 50vh;
+    height: 55vh;
     display: flex;
+}
+
+img {
+    height: 35px;
 }
 
 .editor-container {
