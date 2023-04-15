@@ -40,6 +40,14 @@ img {
     background-color: hsl(225, 6%, 25%);
 }
 
+.editor-container.collapsed{
+    flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+    position: absolute;
+}
+
 .editor-title {
     display: flex;
     justify-content: space-between;
